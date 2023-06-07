@@ -12,6 +12,8 @@ tags:
 ---
 # This is a Heading h1
 
+![](/static/img/img_5287_edited.webp)
+
 ## This is a Heading h2
 
 ###### This is a Heading h6
