@@ -4,6 +4,9 @@ dependencies:
   autoprefixer:
     specifier: ^10.4.2
     version: 10.4.2(postcss@8.4.5)
+  photoswipe:
+    specifier: ^5.3.7
+    version: 5.3.7
   postcss:
     specifier: ^8.4.5
     version: 8.4.5
@@ -2565,6 +2568,11 @@ packages:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
     dev: true
+
+  /photoswipe@5.3.7:
+    resolution: {integrity: sha512-zsyLsTTLFrj0XR1m4/hO7qNooboFKUrDy+Zt5i2d6qjFPAtBjzaj/Xtydso4uxzcXpcqbTmyxDibb3BcSISseg==}
+    engines: {node: '>= 0.12.0'}
+    dev: false
 
   /picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}

@@ -16,6 +16,7 @@
       href="/static/css/prism-tomorrow.css"
     />
     {% endif %}
+    <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" />
   </head>
   <body class="bg-[#f7f5ee] px-5 items-center">
     {% include "./partials/navbar.html" %}
@@ -32,8 +33,27 @@
     {% include "./partials/footer.html" %}
 
     <script src="/static/js/alpine.js"></script>
+    <script src="js/lightgallery.min.js"></script>
 
-    {% if path == "home" %}
+    {% if path == "home" %} {# Gallary initialiser #}
+
+    <script>
+      // Include Lightbox
+      import PhotoSwipeLightbox from "/photoswipe/photoswipe-lightbox.esm.js";
+
+      const lightbox = new PhotoSwipeLightbox({
+        // may select multiple "galleries"
+        gallery: "#gallery--getting-started",
+
+        // Elements within gallery (slides)
+        children: "a",
+
+        // setup PhotoSwipe Core dynamic import
+        pswpModule: () => import("/photoswipe/photoswipe.esm.js"),
+      });
+      lightbox.init();
+    </script>
+
     <!-- Netlify Identity Widget -->
     <!-- Needed only if you are using Netlify Identity feature -->
     <script
