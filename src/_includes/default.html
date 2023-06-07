@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -17,9 +17,9 @@
     />
     {% endif %}
   </head>
-  <body class="bg-[#f7f5ee] px-5 h-full flex flex-col items-center">
+  <body class="bg-[#f7f5ee] px-5 items-center">
     {% include "./partials/navbar.html" %}
-    <div class="h-full max-w-3xl mt-6 px-6">
+    <div class="max-w-3xl grow mt-6 px-6">
       {% if title %}
       <div class="text-center">
         <h1 class="text-gray-800 font-medium">{{title}}</h1>
