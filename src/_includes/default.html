@@ -20,9 +20,14 @@
   <body class="bg-[#f7f5ee] px-5 h-full flex flex-col">
     {% include "./partials/navbar.html" %}
     <div class="h-full max-w-3xl mt-6 px-6">
-      {% if title !== "" %}
-      <h1 class="text-gray-800 font-medium">{{title}}</h1>
-      {% endif %}{{ content | safe }}
+      {% if title %}
+      <div class="text-center">
+        <h1 class="text-gray-800 font-medium">{{title}}</h1>
+        {%if subtitle %}
+        <p class="text-gray-600">{{subtitle}}</p>
+        {% endif %}
+      </div>
+      {% endif %} {{ content | safe }}
     </div>
     {% include "./partials/footer.html" %}
 
