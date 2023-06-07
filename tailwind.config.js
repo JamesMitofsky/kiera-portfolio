@@ -1,6 +1,9 @@
 module.exports = {
   content: ["./**/*.html"],
   theme: {
+    fontFamily: {
+      sans: ["HelveticaNeue", "Arial", "sans-serif"],
+    },
     container: {
       center: true,
     },
